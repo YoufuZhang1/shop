@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: gateway
+
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        namespace: a6c8e049-cd7a-4a4b-a460-761041b47fd9
+        group: DEFAULT_GROUP
+        prefix: application
+        file-extension: yaml
+  profiles:
+    active: rabbitmq, redis, management, gateway, nacos

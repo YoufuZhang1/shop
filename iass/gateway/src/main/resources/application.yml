@@ -1,0 +1,39 @@
+
+
+spring:
+  application:
+    name: gateway
+
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#        username: nacos
+#        password: nacos
+#        namespace: a6c8e049-cd7a-4a4b-a460-761041b47fd9
+#
+#
+#    gateway:
+#      # 配置动态路由
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+#  rabbitmq:
+#    host: 192.168.230.128
+#    username: power
+#    password: power
+#    port: 5672
+#    virtual-host: /power-shop
+#  redis:
+#    host: 192.168.230.128
+#    port: 6379
+#    password: 123456
+#    database: 0
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'   # 暴露健康检查的端点
+server:
+  port: 1001

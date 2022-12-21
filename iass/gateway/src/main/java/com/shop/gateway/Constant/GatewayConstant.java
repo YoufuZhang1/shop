@@ -29,4 +29,13 @@ public interface GatewayConstant {
      */
     String OAUTH_JWT_PREFIX = "oauth:jwt:";
 
+    /**
+     * access_token 后面带的token
+     */
+    String REDIS_JWT_ACCESS_TOKEN_KEY = "access_token";
+
+    /**
+     *   token存活时间
+     */
+    String REDIS_JWT_EXPIRES_IN_KEY = "expires_in";
 }

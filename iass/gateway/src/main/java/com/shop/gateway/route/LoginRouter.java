@@ -46,7 +46,7 @@ public class LoginRouter {
 
                                         //获取并存入redis中
                                         redisTemplate.opsForValue().set(
-                                                GatewayConstant.OAUTH_JWT_PREFIX,
+                                                GatewayConstant.OAUTH_JWT_PREFIX+token,
                                                 "",
                                                 expiresIn,
                                                 TimeUnit.SECONDS

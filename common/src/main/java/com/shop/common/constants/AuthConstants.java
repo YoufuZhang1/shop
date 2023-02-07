@@ -1,0 +1,9 @@
+package com.shop.common.constants;
+
+public interface AuthConstants {
+
+    String AUTHORIZATION_KEY = "authorization";
+    String BEARER_KEY = "bearer ";
+
+    String THIRD_APP_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJhbGwiXSwiZXhwIjozODA5NTkyNTk1LCJqdGkiOiJkYzhmNWJmMi0wZjIzLTRhNmItYTdkOC1jMTJjZmQ3MTdjZGEiLCJjbGllbnRfaWQiOiJwb3dlciJ9.IvWNla8b56Lqde5imIUwtqliyoJw5S4BkqX1F7Y5SW6uhyx5OlXrfVSGmFjX5MZuLR1iU3ksO7WpOPwMCeoz8PRp4bTdC02vUJGivmm_3n1U53KNBTDdfqs1A6QhEoUJDxn-p7yz0NFYYV76hYpJwyw4X3ViQ_z-pj07HzomPGakBDJpNLeHSn-BB-P-WWfzAFwE2i4aA9BDcnOrzBR7_c6oDuVvV6vD0-KmZd6b3LSf2FWYH0gm6fKAWA4wEiHT2q_pWiEBotEeIPSeh-3r8Jfg9X5s3h5UBipzi0RGxMVU63CicnLOAHeGZmOGrSGptcAymulgtzdY5CqzeGsV0A\n";
+}

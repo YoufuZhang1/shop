@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.authserver.mapper.SysUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.shop.authserver.domain.SysUser">
+            <id property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="createUserId" column="create_user_id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="shopId" column="shop_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,username,password,
+        email,mobile,status,
+        create_user_id,create_time,shop_id
+    </sql>
+    <select id="selectAuthListByUserId" resultType="java.lang.String">
+
+        select distinct sm.perms from sys_menu sm
+        left join sys_role_menu srm on sm.menu_id = srm.menu_id
+        left join sys_user_role sur on srm.role_id = sur.role_id
+        where sm.type = '2'
+          and sur.user_id = #{userId}
+    </select>
+</mapper>

@@ -11,6 +11,7 @@
     <modules>
         <module>iass</module>
         <module>common</module>
+        <module>manager</module>
     </modules>
 
 
